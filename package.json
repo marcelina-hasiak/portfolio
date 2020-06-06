@@ -1,0 +1,25 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My own porfolio.",
+  "main": "index.js",
+  "scripts": {
+    "sass": " npx node-sass -w styles/sass/main.scss styles/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcelina-hasiak/portfolio.git"
+  },
+  "author": "Marcelina Hasiak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcelina-hasiak/portfolio/issues"
+  },
+  "homepage": "https://github.com/marcelina-hasiak/portfolio#readme",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
