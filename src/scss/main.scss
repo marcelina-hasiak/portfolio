@@ -1,3 +1,8 @@
+//@import "~normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat+Alternates:wght@300;400;500;700&display=swap');
+@import "_variables.scss";
+@import "modules/hello.scss";
+
 *,
 *::before,
 *::after {
@@ -208,6 +213,7 @@ body {
         font-family: Limelight;
         text-transform: uppercase;
         letter-spacing: .3rem;
+        margin: 0;
         padding-bottom: .5rem;
         position: relative;
         &:before {
