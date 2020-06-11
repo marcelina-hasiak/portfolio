@@ -9,8 +9,8 @@
 </head>
 <body>
     <main>
-        <div class="hero-grid">
-            <header class="hero-grid__header navigation">
+        <div class="hero-layout">
+            <header class="hero-layout__header navigation">
                 <a class="navigation__logo-link" href="#hero">
                     <img class="navigation__logo-img" src="/images/logo.svg" alt="Marcelina Hasiak logo, just initials, nothing fency">
                 </a>
@@ -20,57 +20,52 @@
                     <a class="navigation__link" href="#contact">Contact</a>
                 </nav>
             </header>
-            <section class="hero-grid__section hero" id="hero">
-                <div class="hero__background-left"></div>
-                <ul class="hero__list list">
-                    <li class="list__item">
-                        <a class="social-media-link" href="https://github.com/marcelina-hasiak">
-                            <img class="social-media-link__icon" src="/images/icon-github.svg" alt="github-icon">
+            <section class="hero-layout__section hero-section-layout" id="hero">
+                <div class="hero-section-layout__background-left"></div>
+                <ul class="hero-section-layout__list social-media-list">
+                    <li class="social-media-list__item">
+                        <a class="social-media-list__link" href="https://github.com/marcelina-hasiak">
+                            <img class="social-media-list__icon" src="/images/icon-github.svg" alt="github-icon">
                         </a>
                     </li>
-                    <li class="list__item">
-                        <a class="social-media-link" href="https://codepen.io/marcelina_hasiak">
-                            <img class="social-media-link__icon" src="/images/icon-codepen.svg" alt="codepen-icon">
+                    <li class="social-media-list__item">
+                        <a class="social-media-list__link" href="https://codepen.io/marcelina_hasiak">
+                            <img class="social-media-list__icon" src="/images/icon-codepen.svg" alt="codepen-icon">
                         </a>
                     </li>
-                    <li class="list__item">
-                        <a class="social-media-link" href="https://www.instagram.com/marcelina_hasiak">
-                            <img class="social-media-link__icon" src="/images/icon-codewars.svg" alt="codewars-icon">
+                    <li class="social-media-list__item">
+                        <a class="social-media-list__link" href="https://www.instagram.com/marcelina_hasiak">
+                            <img class="social-media-list__icon" src="/images/icon-codewars.svg" alt="codewars-icon">
                         </a>
                     </li>
-                    <li class="list__item">
-                        <a class="social-media-link" href="https://www.facebook.com/marcelina.patura">
-                            <img class="social-media-link__icon" src="/images/icon-facebook.svg" alt="facebook-icon">
+                    <li class="social-media-list__item">
+                        <a class="social-media-list__link" href="https://www.facebook.com/marcelina.patura">
+                            <img class="social-media-list__icon" src="/images/icon-facebook.svg" alt="facebook-icon">
                         </a>
                     </li>
-                    <li class="list__item">
-                        <a class="social-media-link" href="https://www.codewars.com/users/Marcela666">
-                            <img class="social-media-link__icon" src="/images/icon-instagram.svg" alt="instagram-icon">
+                    <li class="social-media-list__item">
+                        <a class="social-media-list__link" href="https://www.codewars.com/users/Marcela666">
+                            <img class="social-media-list__icon" src="/images/icon-instagram.svg" alt="instagram-icon">
                         </a>
                     </li>
                 </ul>
-                <div class="hero__image">
-                    <img src="/images/hero-1.svg" alt="Smilling Marcelina, self-drawing vector graphic">
+                <div class="hero-section-layout__image image-wrapper">
+                    <img class="image-wrapper__image" src="/images/hero-1.svg" alt="Smilling Marcelina, self-drawing vector graphic">
                 </div>
-                
-                <div class="hero__background-right"></div>  
-                <div class="hero__email email-wrapper">
-                    <address class="email__address">marcelina.hasiak@gmail.com</address>  
+                <div class="hero-section-layout__background-right"></div>  
+                <div class="hero-section-layout__email email-wrapper">
+                    <address class="email-wrapper__email">marcelina.hasiak@gmail.com</address>  
                 </div>
-                <div class="hero__title">
-                    <h1 class="hero__heading">Marcelina</br>Hasiak</h1>
-                    <p class="hero__subtitle">frontend developer</br>-wannabe</p>
+                <div class="hero-section-layout__title hero-heading">
+                    <h1 class="hero-heading__title">Marcelina</br>Hasiak</h1>
+                    <p class="hero-heading__subtitle">frontend developer</br>-wannabe</p>
                 </div>
-                
-                <button class="hero__btn">Projects</button>
-                
-                <div class="hero__decoration">
-                    <img src="/images/leafs-bg.svg" alt="Decorative leafs as a background">
+                <button class="hero-section-layout__btn btn btn--orange">Projects</button>
+                <div class="hero-section-layout__decoration image-wrapper">
+                    <img class="image-wrapper__image" src="/images/leafs-bg.svg" alt="Decorative leafs as a background">
                 </div>
-                
-                    
             </section>
-    </div>
+        </div>
         <section id="about" class="about"></section>
         <section id="projects"></section>
         <section id="contact"></section>
