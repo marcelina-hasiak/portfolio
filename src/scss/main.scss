@@ -1,4 +1,4 @@
-//@import "~normalize.css";
+@import "~normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Limelight&family=Montserrat+Alternates:wght@300;400;500;700&display=swap');
 @import "_variables.scss";
 @import "modules/hello.scss";
@@ -16,7 +16,7 @@ html {
     box-sizing: border-box;
 
     @media (min-width: 1024px) and (max-width: 2000px) {
-        font-size: calc( 24px + (38 - 24) * ( (100vw - 1024px) / ( 2000 - 1024) ));
+        font-size: calc( 23px + (38 - 23) * ( (100vw - 1024px) / ( 2000 - 1024) ));
     }
     @media (min-width: 2000px) {
         font-size: 38px;
@@ -35,6 +35,7 @@ body {
 //layout => hero
 .hero-layout {
     min-height: 100vh;
+    height: 600px;
     display: grid;
     grid-template-rows: min-content 1fr;
     &__header {
@@ -79,6 +80,9 @@ body {
         &--important {
             border-bottom: solid .2rem #FF7900;
         }
+    }
+    @media (max-width: 1024px) {
+         
     }
 }
 
@@ -235,12 +239,11 @@ body {
 //components => image-container
 .image-wrapper  {
     display: flex;
-    align-items: flex-end;
     justify-content: flex-end;
     height: 100%;
     &__image {
         width: auto;
-        max-height: 100%;
+        height: 100%;
     }
 }
 
