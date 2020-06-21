@@ -212,18 +212,18 @@ body {
         width: 2rem;
         padding: .3rem;
         @media (max-width: 1023px) {
-            width: 2.1rem;
+            width: 2rem;
         }
-        @media (max-width: 450px) {
-            width: 2.2rem;
-        }
+        // @media (max-width: 450px) {
+        //     width: 2.2rem;
+        // }
     }
     &__icon {
         width: 100%;
     }
     @media (max-width: 1023px) {
         margin: 0;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
     }
 }
 
@@ -265,6 +265,7 @@ body {
 //component => email
 .email-wrapper {
  padding-left: 1rem;
+ position: relative;
     &__email {
         position: absolute;
         font-size: .6rem;
@@ -292,7 +293,7 @@ body {
 .hero-heading {
     text-align: end;
     padding-right: 4rem;
-    margin-top: 8rem;
+    margin-top: 7rem;
     &__title {
         font-size: 3.3rem;
         font-family: Limelight;
@@ -437,7 +438,7 @@ body {
  }
  @media (min-width: 600px) and (max-width: 1023px) {
     .hero-section-layout {
-        grid-template-rows: minmax(auto, 1.2fr) minmax(auto, 1fr);
+        grid-template-rows: 2fr minmax(0, 1.5fr);
         grid-template-columns: min-content 2fr 1fr;
         row-gap: .5rem;
         &__list {
@@ -475,16 +476,16 @@ body {
             grid-column: 2/3;
             grid-row: 2/3;
             justify-self: center;
-            align-self: end;
+            align-self: start;
             margin-left: 0;
-            margin-bottom: 10rem;
+            margin-top: 1rem;
     }
 }
  }
 
  @media (max-width: 599px) {
     .hero-section-layout {
-        grid-template-rows: minmax(auto, 2.6fr) minmax(auto, 1fr) minmax(auto, 2fr);
+        grid-template-rows: minmax(auto, 2.6fr) minmax(0, 1fr) minmax(0, 2fr);
         row-gap: 1rem;
         &__email {
             display: none;
