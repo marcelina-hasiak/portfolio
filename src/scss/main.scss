@@ -218,6 +218,9 @@ body {
         line-height: 1.6;
         letter-spacing: .4rem;
     }
+    @media (min-width: 1024px) {
+        margin-bottom: 1rem;
+    }
 }
 
 //component => email
