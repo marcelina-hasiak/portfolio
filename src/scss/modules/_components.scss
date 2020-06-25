@@ -1,0 +1,247 @@
+// *******************   HERO SECTION *******************
+
+//component => navigation bar
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1.5rem 2rem;
+    line-height: 2.5;
+    font-weight: 400;
+    letter-spacing: .3rem;
+    z-index: 100;
+
+    @media (min-width: 1024px) {
+        padding: 1.5rem 3.5rem 0 2rem;
+    }
+    &__logo-link { 
+        width: 3.6rem;
+    }
+    &__logo-img {
+        width: 100%;
+    }
+    &__bar {
+        display: none;
+
+        @media (min-width: 1024px) {
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+        }
+    }
+    &__link {
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+
+        @media (min-width: 1024px) {
+            padding-left:.3rem;
+            margin-left: 2rem;
+            &:nth-child(1) {
+                margin-left: 10rem; 
+            }
+            &--important {
+                border-bottom: solid .2rem #FF7900;
+            }
+        }
+    } 
+}
+
+//components => hamburger menu
+.hamburger-menu {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: none;
+    border:none;
+    color:#ffffff;
+    letter-spacing: .3rem;
+    line-height: 2.5;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    cursor:pointer;
+
+    @media (min-width: 1024px) {
+        display: none;
+    }
+}
+
+//component => hero bg left 
+.hero-section-layout__background-left {
+    background: linear-gradient(to top, #140152, #17015c, #1a0166, #1e0170, #21007a);   
+}
+
+//component => hero bg right
+.hero-section-layout__background-right {
+    border-left: solid .3rem #ffffff;
+    background: linear-gradient(to right, #140152, #17015c, #1a0166, #1e0170, #21007a);
+}
+
+//component => social media list
+.social-media-list {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    width: min-content;
+    z-index: 10;
+
+    @media (min-width: 1024px) {
+        margin: 6rem 0 0 0; 
+    }
+    &__item {
+        list-style: none;
+    }
+    &__link {
+        display: block;
+        width: 1.9rem;
+        padding: .3rem;
+
+        @media (min-width: 1024px) {
+            width: 2rem;
+        }
+    }
+    &__icon {
+        width: 100%;
+    }
+}
+
+//component => orange button
+.btn {
+    color:#ffffff;
+    border: solid 3px #ffffff;
+    border-radius: 4px;
+    margin-left: 2rem;
+    padding: 0 1.2rem 0.2rem 1.6rem;
+    text-transform: lowercase;
+    text-shadow: 4px 0 4px rgba(0,0,0,0.35);
+    font-size: 1.2rem;
+    line-height: 1.5;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+    z-index: 10;
+    cursor: pointer;
+    &--orange {
+        background: #FB5607;
+    }
+    @media (min-width: 600px) {
+        border: solid 5px #ffffff;
+        padding: 0 2rem 0.2rem 2.5rem;
+        margin-left: 0;
+        font-size: 1.5rem;
+        line-height: 1.6;
+        letter-spacing: .4rem;
+    }
+    @media (min-width: 1024px) {
+        margin-bottom: 1rem;
+    }
+}
+
+//component => email
+.email-wrapper {
+    @media (min-width: 600px) {
+        position: relative;
+        padding-left: 5.5rem;
+        height: 1.5rem;
+        &__email {
+            position: absolute;
+            font-size: .6rem;
+            max-height: 80%;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 3rem;
+                height: .1rem;
+                top: 0.35rem;
+                left: -3.5rem;
+                background: #ffffff;
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        padding-left: 1rem;
+        height: unset;
+        &__email {
+            transform: rotate(-90deg);
+            transform-origin: 0 -50%;
+            bottom: 3.5rem;
+        }
+    }
+}
+
+//component => h1
+.hero-heading {
+    text-align: left;
+    padding-left: 2rem;
+    margin-top: 7rem;
+    
+    @media (min-width: 600px) {
+        padding-left: 1rem;
+        margin-bottom: 3rem;
+    }
+    @media (min-width: 1024px) {
+        text-align: end;
+        padding: 0 4rem 0 0;
+        margin-bottom: 0;
+    }
+    &__title {
+        font-size: 1.9rem;
+        letter-spacing: 0.05rem;
+        font-family: Limelight;
+        text-transform: uppercase;
+        margin: 0;
+        padding-bottom: .5rem;
+        position: relative;
+        @media (min-width: 450px) {
+            font-size: 2.6rem;
+        }
+        @media (min-width: 600px) {
+            font-size: 2.7rem;
+            letter-spacing: .2rem;
+            &:before {
+                content: '';
+                position: absolute;
+                width: 19rem;
+                height: 6rem;
+                top: -1rem;
+                left: -2.5rem;
+                background: #ffffff;
+                opacity: .2;
+            }
+        }
+        @media (min-width: 750px) {
+            font-size: 3.4rem;
+            //letter-spacing: .2rem;
+        }
+        @media (min-width: 1024px) {
+            letter-spacing: .3rem;
+            &:before {
+                top: -1rem;
+                left: -1.5rem;
+            }
+        }
+    }
+    &__subtitle {
+        line-height: 1.3;
+    }
+}
+
+//component => image-container/image
+.image-wrapper  {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+    &__image {
+        height: auto;
+        max-height: 100%;
+        max-width: 90%;
+
+        @media (min-width: 1024px) {
+            max-width: unset;
+        }
+    }
+}
+
+// *******************   ABOUT SECTION *******************

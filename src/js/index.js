@@ -1,5 +1,4 @@
 import '../scss/main.scss';
-console.log('dupaaaa')
 /* HAMBURGER MENU */
 
 const hamburgerButton = document.querySelector('.hamburger-menu--js')
