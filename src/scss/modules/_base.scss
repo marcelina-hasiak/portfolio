@@ -7,10 +7,10 @@
 }
 
 html {
-    font-size: 14;
+    font-size: 14px;
     box-sizing: border-box;
-    @media (min-width: 300px) and (max-width: 1023px) {
-        font-size: calc( 16px + (23 - 16) * ( (100vw - 300px) / ( 1023 - 300) ));
+    @media (min-width: 250px) and (max-width: 1023px) {
+        font-size: calc( 14px + (23 - 14) * ( (100vw - 250px) / ( 1023 - 250) ));
     }
 
     @media (min-width: 1024px) and (max-width: 2000px) {
