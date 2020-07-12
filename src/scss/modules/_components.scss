@@ -5,20 +5,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center; 
+    position: fixed;
+    left:0;
     padding: 1.5rem 2rem;
     line-height: 2.5;
     font-weight: 400;
     letter-spacing: .3rem;
+    width: 100%;
     z-index: 100;
 
     @media (min-width: 1024px) {
         padding: 1.5rem 3.5rem 0 2rem;
+    }
+    @media (min-width: 1360px) {
+        padding: 1.5rem 6rem 0 2rem;
     }
     &__logo-link { 
         width: 3.6rem;
     }
     &__logo-img {
         width: 100%;
+        height: 100%;
     }
     &__bar {
         display: none;
@@ -36,14 +43,15 @@
 
         @media (min-width: 1024px) {
             padding-left:.3rem;
-            margin-left: 2rem;
-            &:nth-child(1) {
-                margin-left: 10rem; 
-            }
+            margin-left: 1.8rem;
             &--important {
                 border-bottom: solid .2rem #FF7900;
             }
         }
+        @media (min-width: 1360px) {
+            margin-left: 3rem;
+        }
+        
     } 
 }
 
@@ -74,7 +82,7 @@
 //component => hero bg right
 .hero-section-layout__background-right {
     border-left: solid .3rem #ffffff;
-    background: linear-gradient(90deg, #140152 30%, #3111A8 100%); 
+    background: linear-gradient(180deg, #140152 30%, #3111A8 100%); 
 }
 
 //component => social media list
@@ -84,7 +92,6 @@
     padding-left: 2rem;
     margin-bottom: 1rem;
     width: min-content;
-    z-index: 10;
 
     @media (min-width: 1024px) {
         margin: 6rem 0 0 0; 
@@ -117,15 +124,15 @@
     &--orange {
         background: #FB5607;
         margin-left: 2rem;
-        padding: 0 1.2rem 0.2rem 1.6rem;
+        padding: 0.2rem 2rem 0.3rem 2.2rem;
         text-transform: lowercase;
-        font-size: 1.2rem;
-        line-height: 1.5;
+        font-size: 1.3rem;
+        line-height: 1.4;
         letter-spacing: 0.3rem;
         font-weight: 500;
-        z-index: 10;
+        //z-index: 10;
         @media (min-width: 600px) {
-            padding: 0 2rem 0.2rem 2.5rem;
+            padding: 0.1 2rem 0.2rem 2.5rem;
             margin-left: 0;
             font-size: 1.5rem;
             line-height: 1.6;
@@ -174,7 +181,7 @@
 .hero-heading {
     text-align: left;
     padding-left: 2rem;
-    margin-top: 7rem;
+    margin-top: 8rem;
     
     @media (min-width: 600px) {
         padding-left: 1rem;
@@ -185,9 +192,12 @@
         padding: 0 4rem 0 0;
         margin-bottom: 0;
     }
+    @media (min-width: 1360px) {
+        padding: 0 6rem 0 0;
+    }
     &__title {
-        font-size: 2rem;
-        letter-spacing: 0.05rem;
+        font-size: 2.2rem;
+        letter-spacing: 0.1rem;
         font-family: Limelight;
         text-transform: uppercase;
         margin: 0;
@@ -199,24 +209,27 @@
         @media (min-width: 600px) {
             font-size: 2.8rem;
             letter-spacing: .2rem;
+        }
+        @media (min-width: 750px) {
+            font-size: 3.2rem;
             &:before {
                 content: '';
                 position: absolute;
-                width: 19rem;
+                width: 22rem;
                 height: 6rem;
                 top: -1rem;
                 left: -2.5rem;
                 background:rgba(255,255,255, .15);
             }
         }
-        @media (min-width: 750px) {
-            font-size: 3.2rem;
-        }
         @media (min-width: 1024px) {
             letter-spacing: .3rem;
+        }
+        @media (min-width: 1360px) {
+            font-size: 4rem;
             &:before {
-                top: -1rem;
-                left: -1.5rem;
+                width: 26rem;
+                height: 7rem;
             }
         }
     }
@@ -234,10 +247,12 @@
     &__image {
         height: auto;
         max-height: 100%;
-        max-width: 90%;
+        max-width: 95%;
 
         @media (min-width: 1024px) {
+            height: 100%;
             max-width: unset;
+            // max-height: 100%;
         }
     }
 }

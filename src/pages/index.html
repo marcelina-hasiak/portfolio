@@ -12,14 +12,14 @@
     <main>
         <div class="hero-layout">
             <header class="hero-layout__header navigation navigation--js">
-                <a class="navigation__logo-link" href="#hero">
+                <a class="navigation__logo-link navigation__logo-link--js" href="#hero">
                     <img class="navigation__logo-img" src="../assets/img/logo.svg" alt="Marcelina Hasiak logo, just initials, nothing fency">
                 </a>
                 <button class="hamburger-menu hamburger-menu--js">Menu</button>
                 <nav class="navigation__bar navigation__bar--js">
-                    <a class="navigation__link" href="#about">About</a>
-                    <a class="navigation__link navigation__link--important" href="#projects">Portfolio</a>
-                    <a class="navigation__link" href="#contact">Contact</a>
+                    <a class="navigation__link navigation__link--js" href="#about">About</a>
+                    <a class="navigation__link navigation__link--important navigation__link--js" href="#projects">Portfolio</a>
+                    <a class="navigation__link navigation__link--js" href="#contact">Contact</a>
                 </nav>
                 
             </header>
@@ -70,46 +70,173 @@
                 </div>
             </section>
         </div>
+       
         <section id="about" class="about about-layout">
             <img class="about__image about__image--left" src="../assets/img/leafs-bg-about.svg" alt="Decorative leafs as a background">
-            
-            <h2 class="about__heading">About</h2>
-            <p class="about__paragraph">Hi,</br>
-                I ‘ve been working as a <strong class="about__paragraph--strong">dental technician for 7 years</strong> till now. Please look at some of my latest CAD projects below to know better the topic.</p>
-            <figure class="carousel--cad-projects">carousel</figure>
-            <p class="about__paragraph">Look nice ? Well, it’s a really fantasic profession, nevertheless long story short I just can’t imagine doing prosthesis for next 30 years here in Poland.</p>
-            <p class="about__paragraph"><strong class="about__paragraph--strong">I need to develop my skills everyday and not just few times per job.</strong></p>
-            <p class="about__paragraph about__interests-title">my interests, CLICK for more</p>
-              
+            <div class="dupa">
+                <div class="about__wrapper">
+                    <h2 class="about__heading">About</h2>
+                    <p class="about__paragraph">Hi,</br>
+                        I ‘ve been working as a <strong class="about__paragraph--strong">dental technician for 7 years</strong> till now. Please look at some of my latest CAD projects below to know better the topic.</p>
+                </div> 
+                <figure class="glide__wrapper">
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <img class="glide__img" src="../assets/img/teeth-1.png" alt="CAD project- prosthesis">
+                            </li>
+                            <li class="glide__slide">
+                                <img class="glide__img" src="../assets/img/teeth-2.png" alt="CAD project- prosthesis">
+                            </li>
+                            <li class="glide__slide">
+                                <img class="glide__img" src="../assets/img/teeth-3.png" alt="CAD project- prosthesis">
+                            </li>
+                            <li class="glide__slide">
+                                <img class="glide__img" src="../assets/img/teeth-4.png" alt="CAD project- prosthesis">
+                            </li>
+                            <li class="glide__slide">
+                                <img class="glide__img" src="../assets/img/teeth-5.png" alt="CAD project- prosthesis">
+                            </li>
+                            <li class="glide__slide">
+                                <img class="glide__img" src="../assets/img/teeth-6.png" alt="CAD project- prosthesis">
+                            </li>
+                            <li class="glide__slide">
+                                <img class="glide__img" src="../assets/img/teeth-7.png" alt="CAD project- prosthesis">
+                            </li>
+                            <li class="glide__slide">
+                                <img class="glide__img" src="../assets/img/teeth-8.png" alt="CAD project- prosthesis">
+                            </li>
+                            </ul>
+                        </div>
+                        <div class="glide__arrows" data-glide-el="controls">
+                            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                                <img src="../assets/img/icon-arrow-left.svg" alt="icon-arrow-left">
+                            </button>
+                            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                                <img src="../assets/img/icon-arrow-right.svg" alt="icon-arrow-right">
+                            </button>
+                        </div>
+                    </div>
+                </figure>  
+                    
+                <div class="about__wrapper">
+                    <p class="about__paragraph">Look nice ? Well, it’s a really fantasic profession, nevertheless long story short I just can’t imagine doing prosthesis for next 30 years here in Poland.</p>
+                    <p class="about__paragraph about__paragraph--important"><strong class="about__paragraph--strong">I need to develop my skills everyday and not just few times per job.</strong></p>
+                </div>
+            </div>
+            <img class="about__image about__image--right" src="../assets/img/leafs-bg-about.svg" alt="Decorative leafs as a background">
+            <p class="about__paragraph about__call-to-action">my interests, CLICK for more</p>            
             <div class="about__buttons-wrapper">
-                <button class="btn btn--interests">
+                <button class="btn btn-hobby btn-hobby--js">
                     <img src="../assets/img/icon-painting.svg" alt="Icon, tool paintings">
                     <span>paintings</span>
                 </button>
-                <button class="btn btn--interests">
+                <button class="btn btn-hobby btn-hobby--js">
                     <img src="../assets/img/icon-camera.svg" alt="Icon, photocamera">
                     <span>photography</span>
                 </button>
-                <button class="btn btn--interests">
+                <button class="btn btn-hobby btn-hobby--js">
                     <img src="../assets/img/icon-mountains.svg" alt="Icon, mountains">
                     <span>mountains</span>
                 </button>
-                <button class="btn btn--interests">
+                <button class="btn btn-hobby btn-hobby--js">
                     <img src="../assets/img/icon-pottery.svg" alt="Icon, pottery">
                     <span>pottery</span>
                 </button>
-                <button class="btn btn--interests">
+                <button class="btn btn-hobby btn-hobby--js">
                     <img src="../assets/img/icon-games.svg" alt="Icon, game controler">
                     <span>videogames</span>
                 </button>
-                <button class="btn btn--interests">
+                <button class="btn btn-hobby btn-hobby--js">
                     <img src="../assets/img/icon-dice.svg" alt="Icon, dice">
                     <span>boardgames</span>
                 </button> 
             </div>
-            <img class="about__image about__image--right" src="../assets/img/leafs-bg-about.svg" alt="Decorative leafs as a background">
         </section>
-        <section id="projects"></section>
+        <section id="projects" class="projects projects-layout">
+            <h2 class="projects__heading">Projects</h2>
+            
+            <article class="projects__description ">
+            <img class="about__image about__image--left" src="../assets/img/leafs-bg-about.svg" alt="Decorative leafs as a background">
+            <img class="projects__image" src="../assets/img/cyber-market.png" alt="Cyber-market project." class="projects__image">
+
+            <div class="projects__link-wrapper">
+                <a href="#" class="projects__link projects__link--github">
+                    <img src="../assets/img/icon-github.svg" alt="Icon, github">
+                </a>
+                <a href="#" class="projects__link projects__link--website">
+                    <img src="../assets/img/icon-website.svg" alt="Icon, website">
+                </a>
+                <p class="projects__hashtags"> #vanillajs  #cssgrid  #cssflexbox  #glitch  #flicker  #bannertranslate #svganimation #localstorage #forms </p>
+            </div>
+           
+            <div class="project-description">
+                <h3 class="project-description__heading">Cyber-market</h3>
+                <ul class="project-description__list">
+                    <li>my first website</li>
+                    <li>static</li>
+                    <li>full of bells and whistles</li>
+                    <li>simple webpage with riddle in it, ideal for some LARP games and so on. </li>
+                    <li>find a password on the page (647) and hack a TRIADA member’s secret account (by customer form) to transfer some money- max. half of the account value; current account value is stored in the local storage</li>
+                </ul>
+            </div>
+            </article>
+
+            <article class="projects__description ">
+                <img class="about__image about__image--right" src="../assets/img/leafs-bg-about.svg" alt="Decorative leafs as a background">
+                <img class="projects__image" src="../assets/img/porfolio.png" alt="My portfolio project." class="projects__image">
+    
+                <div class="projects__link-wrapper">
+                    <a href="#" class="projects__link projects__link--github">
+                        <img src="../assets/img/icon-github.svg" alt="Icon, github">
+                    </a>
+                    <a href="#" class="projects__link projects__link--website">
+                        <img src="../assets/img/icon-website.svg" alt="Icon, website">
+                    </a>
+                    <p class="projects__hashtags"> #vanillajs  #cssgrid  #cssflexbox #svgillustrations #magicscroll #gsap #semantichtml5 #glide.js #forms </p>
+                </div>
+               
+                <div class="project-description">
+                    <h3 class="project-description__heading">My portfolio</h3>
+                    <ul class="project-description__list">
+                        <li>simple design</li>
+                        <li>static</li>
+                        <li>selfmade svg illustrations</li>
+                        <li>animations handled with gsap and magic scroll</li>
+                        <li>selfmade design in figma</li>
+                    </ul>
+                </div>
+                    
+            </article>
+
+            <article class="projects__description ">
+                <img class="about__image about__image--left" src="../assets/img/leafs-bg-about.svg" alt="Decorative leafs as a background">
+            <img class="projects__image" src="../assets/img/cyber-market.png" alt="Cyber-market project." class="projects__image">
+
+            <div class="projects__link-wrapper">
+                <a href="#" class="projects__link projects__link--github">
+                    <img src="../assets/img/icon-github.svg" alt="Icon, github">
+                </a>
+                <a href="#" class="projects__link projects__link--website">
+                    <img src="../assets/img/icon-website.svg" alt="Icon, website">
+                </a>
+                <p class="projects__hashtags"> #vanillajs  #cssgrid  #cssflexbox  #glitch  #flicker  #bannertranslate #svganimation #localstorage #forms </p>
+            </div>
+           
+            <div class="project-description">
+                <h3 class="project-description__heading">Cyber-market</h3>
+                <ul class="project-description__list">
+                    <li>my first website</li>
+                    <li>static</li>
+                    <li>full of bells and whistles</li>
+                    <li>simple webpage with riddle in it, ideal for some LARP games and so on. </li>
+                    <li>find a password on the page (647) and hack a TRIADA member’s secret account (by customer form) to transfer some money- max. half of the account value; current account value is stored in the local storage</li>
+                </ul>
+            </div>
+            </article>
+
+        </section>
         <section id="contact"></section>
     </main>
 </body>
