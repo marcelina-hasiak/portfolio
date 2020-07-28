@@ -27,10 +27,19 @@ body {
     color: #ffffff;
     max-width: 2000px;
     margin: 0 auto;
-
+    overflow-x: hidden;
+    
 }
 main {
     overflow-x: hidden;
 }
+*::-webkit-scrollbar {
+    width: 18px;
+  }
 
-
+  *::-webkit-scrollbar-track {
+    background: #1e016d;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: #695a92;
+  }
