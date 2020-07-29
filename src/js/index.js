@@ -104,10 +104,5 @@ const createPopupWindow = () => {
 
 
 
-
   
-  const array1 = ['a', 'b', 'c'];
-
-  const reducedValue = array1.reduce((prev, next) => {prev + next}, 'l');
-  console.log(reducedValue)
   
