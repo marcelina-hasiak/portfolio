@@ -42,45 +42,5 @@
 }
 ///////////////////////////////////
 
-//decoration
 
-.main-decorative-pattern {
-    position: absolute;
-    opacity: 20%;
-    z-index: -1;
-    max-width: 100%;
-    &--left {
-        transform: rotate(90deg);
-        transform-origin: 40% 30%;
-    }
 
-    &--right {
-        transform: rotate(-90deg);
-        transform-origin: 50% 0;
-    }
-    &--about-left {
-        top: 10rem;
-        left: 0;
-    }
-    &--about-right {
-        bottom: 0;
-        right: 1rem;
-    }
-    &--projects-left {
-        top: 23rem;
-        left: -4rem;
-        @media (min-width: 1024px) {
-            top:10rem;
-            left: -6rem;
-        }
-    }
-    &--projects-right {
-        right: -3rem;
-        top: 30rem;
-        @media (min-width: 1024px) {
-            right: -5rem;
-            top: 13rem;
-        }
-    }
-
-}
