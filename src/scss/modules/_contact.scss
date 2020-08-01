@@ -65,19 +65,19 @@
 
 //LAYOUT
 .contact-layout {
-    display: grid;
-    align-items: center;
-    @media (min-width: 750px) {
-        grid-template-columns: 1fr minmax(60%, 3fr);
-    }
-    &:nth-child(3) {
-        align-items: start;
-    }
+	display: grid;
+	align-items: center;
+	@media (min-width: 750px) {
+		grid-template-columns: 1fr minmax(60%, 3fr);
+	}
+	&:nth-child(3) {
+		align-items: start;
+	}
 
-    &__submit {
-        @media (min-width: 750px) {
+	&__submit {
+		@media (min-width: 750px) {
 			grid-column: 2/3;
 			justify-self: center;
 		}
-    }
+	}
 }

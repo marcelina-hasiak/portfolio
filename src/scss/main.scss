@@ -6,95 +6,12 @@
 @import "modules/_about.scss";
 @import "modules/_projects.scss";
 @import "modules/_contact.scss";
+@import "modules/_footer.scss";
 @import "modules/_utilities.scss";
 
 
-.footer {
-	background: #21007a;
-	border-top: 5px solid white;
-	position: relative;
-	background-image: url("../assets/img/leafs-bg-footer-max.svg");
-	background-position: bottom;
-	background-size: contain;
-	background-repeat: repeat-x;
-	display: flex;
 
-	@media (min-width: 1024px) {
-		border-top: 8px solid white;
-		justify-content: center;
-	}
-	&__me {
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		z-index: 10;
-		height: auto;
-		max-width: 30%;
-		max-height: 20rem;
-	}
-	&__wrapper {
-		padding: 1.5rem 2rem;
-		display: flex;
-		flex-direction: column;
-		width: 76%;
-		align-items: center;
-		@media (min-width: 1024px) {
-			padding: 1.5rem 4rem;
-			width: 80%;
-		}
-	}
 
-	&__paragraph {
-		text-align: center;
-		padding-bottom: .5rem;
 
-		&--copyright {
-			font-size: .9rem;
-			@media (min-width: 600px) {
-				font-size: 1rem;
-			}
-		}
-		&--icons {
-			font-size: .5rem;
-			@media (min-width: 600px) {
-				font-size: .6rem;
-			}
-			@media (min-width: 1024px) {
-				font-size: .7rem;
-			}
-			& a {
-				//text-decoration: none;
-				color: white;
-				font-weight: 500;
-			}
-		}
-	}
-}
-.social-media-list--footer {
-	flex-direction: row;
-	margin: 0;
-	padding: 0.5rem 0.8rem;
-}
-.logo {
-	width: 3rem;
-	margin-left: 1rem;
-	@media (min-width: 1024px) {
-		width: 4rem;
-		margin-left: 0;
-	}
-}
-.dupa-wrapper {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
 
-	@media (min-width: 1024px) {
-		flex-direction: column;
-	}
-}
-.social-media-list__link--footer {
-	//width: 1.6rem;
-	@media (min-width: 1024px) {
-		//width: 1.8rem;
-	}
-}
+
