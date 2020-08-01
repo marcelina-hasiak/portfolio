@@ -3,17 +3,13 @@
 	background: linear-gradient(180deg, #140152 0%, #3111a8 100%);
 	position: relative;
 	z-index: 1;
+
 	@media (min-width: 1024px) {
 		padding: 10rem 6rem 4rem 6rem;
 	}
 	&__heading {
-		text-transform: uppercase;
-		font-weight: 500;
-		font-size: 2rem;
-		position: relative;
-		margin-bottom: 4rem;
 		padding: 0 3rem;
-		letter-spacing: 1.5px;
+
 		@media (min-width: 600px) {
 			padding: 0 4rem;
 		}
@@ -21,32 +17,30 @@
 			padding: 0;
 		}
 		&:after {
-			content: "";
-			position: absolute;
-			background: #ef271b;
 			width: 8rem;
-			height: 2.5rem;
-			top: -1.5rem;
-			left: 2rem;
-			z-index: -1;
+			left: 3rem;
+	
+			@media (min-width: 1024px) {
+				left: -1rem;
+			}
 		}
 	}
-
 	&__paragraph {
 		font-weight: 300;
 		margin-bottom: 1.5rem;
 		line-height: 1.2;
 		padding: 0 3rem;
 		display: block;
+
 		@media (min-width: 600px) {
 			padding: 0 4rem;
 		}
 		@media (min-width: 1024px) {
 			padding: 0;
 		}
-
 		&--important {
 			margin-bottom: 5rem;
+
 			@media (min-width: 1024px) {
 				margin-bottom: 0;
 			}
@@ -59,6 +53,7 @@
 			position: relative;
 			padding-right: 4rem;
 			text-align: end;
+
 			&:after {
 				content: "";
 				position: absolute;
@@ -78,22 +73,42 @@
 	}
 	&__buttons-wrapper {
 		padding: 0 3rem;
+
 		@media (min-width: 1024px) {
 			padding: 0;
 		}
 	}
 }
 
+//component => section-heading
+.section-heading {
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 2rem;
+	position: relative;
+	margin-bottom: 4rem;
+	letter-spacing: 1.5px;
+	&:after {
+		content: "";
+		position: absolute;
+		background: #ef271b;
+		height: 2.5rem;
+		top: -1.5rem;
+		z-index: -1;
+	}
+}
+
+//component => floral pattern with flowers
 .main-decorative-pattern {
 	position: absolute;
 	opacity: 20%;
 	z-index: -1;
 	max-width: 100%;
+
 	&--left {
 		transform: rotate(90deg);
 		transform-origin: 40% 30%;
 	}
-
 	&--right {
 		transform: rotate(-90deg);
 		transform-origin: 50% 0;
@@ -109,24 +124,28 @@
 	&--projects-left {
 		top: 23rem;
 		left: -4rem;
+
 		@media (min-width: 1024px) {
 			top: 10rem;
 			left: -6rem;
 		}
 	}
 	&--projects-right {
-		right: -3rem;
+		right: -2rem;
 		top: 30rem;
+
 		@media (min-width: 1024px) {
-			right: -5rem;
+			right: -4.5rem;
 			top: 13rem;
 		}
 	}
 }
+
+//component => carousel
 .glide {
 	&__wrapper {
 		border-radius: 4px;
-		padding: 2.5rem 2.5rem;
+		padding: 2.5rem 3.5rem;
 		background: #140152;
 		margin-bottom: 2rem;
 		grid-column: 1/2;
@@ -137,10 +156,10 @@
 		display: flex;
 		justify-content: center;
 	}
-	&__imgage {
+	&__image {
 		max-width: 100%;
 		border-radius: 7px;
-		max-height: 180px;
+		max-height: 300px;
 		width: auto;
 		border: 2px solid white;
 	}
@@ -151,18 +170,20 @@
 		position: absolute;
 		top: 38%;
 		z-index: 100;
+
 		& img {
-			height: 100%;
+			height: 2.5rem;
 		}
 		&--left {
-			left: -1.5rem;
+			left: -2rem;
 		}
 		&--right {
-			right: -1.5rem;
+			right: -2rem;
 		}
 	}
 }
 
+//component => wrapper with hobby buttons
 .btn-hobby {
 	background: rgba(255, 255, 255, .15);
 	border: solid 2px #ffffff;
@@ -184,6 +205,7 @@
 	}
 	&__title {
 		display: none;
+
 		@media (min-width: 1024px) {
 			display: block;
 			font-size: .5rem;
@@ -219,6 +241,7 @@
 		justify-content: center;
 		justify-items: center;
 		grid-gap: 1.5rem;
+
 		@media (min-width: 350px) {
 			grid-template-columns: repeat(3, 1fr);
 		}

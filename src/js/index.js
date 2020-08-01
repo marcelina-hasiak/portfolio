@@ -5,18 +5,21 @@ import svg from "../assets/img/logo.svg";
 new Glide('.glide', {
     type: 'carousel',
     startAt: 0,
-    perView: 3,
+    perView: 2,
     gap: 20,
     animationDuration: 700,
     breakpoints: {
         1450: {
             perView: 2
           },
-        1024: {
-            perView: 3
+          1300: {
+            perView: 1
           },
-        850: {
-          perView: 2
+        1024: {
+            perView: 2
+          },
+        700: {
+          perView: 1
         },
         450: {
             perView: 1
