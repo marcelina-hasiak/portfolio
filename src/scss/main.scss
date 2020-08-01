@@ -5,97 +5,9 @@
 @import "modules/_hero.scss";
 @import "modules/_about.scss";
 @import "modules/_projects.scss";
+@import "modules/_contact.scss";
 @import "modules/_utilities.scss";
 
-// .dupa-1 {
-// 	position: fixed;
-// 	top: 0;
-// 	height: 100vh;
-// 	width: 100vw;
-// 	background: #3111a8;
-// 	background-image: linear-gradient(rgba(256, 256, 256, 0.2), rgba(256, 256, 256, 0.2)),
-// 		url("../assets/img/leafs-bg-hero.svg");
-// 	z-index: 100;
-// 	background-position: right;
-// 	background-repeat: no-repeat;
-// 	background-size: contain;
-// 	overflow: hidden;
-// }
-
-
-
-//////////////////////////////////////
-.contact {
-	padding: 10rem 3rem 3rem 3rem;
-	background: #140152;
-	z-index: 1;
-	position: relative;
-	@media (min-width: 600px) {
-		padding: 10rem 4rem 4rem 4rem;
-	}
-	@media (min-width: 1024px) {
-		padding: 10rem 6rem 3rem 6rem;
-	}
-	&__heading {
-		&:after {
-			width: 10.5rem;
-			left: -1rem;
-		}
-	}
-	&__form {
-		width: 90%;
-		margin: 0 auto;
-		@media (min-width: 1024px) {
-			width: 70%;
-		}
-		& p {
-			display: grid;
-			padding-bottom: 2rem;
-			align-items: center;
-			@media (min-width: 750px) {
-				grid-template-columns: 1fr minmax(60%, 3fr);
-			}
-		}
-		& p:nth-child(3) {
-			align-items: start;
-		}
-	}
-	&__label {
-		padding-bottom: 1.5rem;
-		@media (min-width: 750px) {
-			margin-right: 1rem;
-			padding-bottom: 0;
-		}
-	}
-	&__input {
-		padding: .3rem;
-		border: none;
-		border-radius: 4px;
-		align-self: flex-start;
-		//in-height: 50px;
-		color: #140152;
-		height: 50px;
-		width: 100%;
-		@media (min-width: 720px) {
-			height: 60px;
-		}
-		&--textarea {
-			min-height: 150px;
-			resize: vertical;
-		}
-	}
-	&__submit {
-		margin: 2.5rem auto 0 auto;
-
-		@media (min-width: 750px) {
-			grid-column: 2/3;
-			margin: 0;
-			margin-top: 2rem;
-			justify-self: center;
-		}
-	}
-}
-/////////////
 
 .footer {
 	background: #21007a;

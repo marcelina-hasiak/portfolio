@@ -66,13 +66,12 @@
 		font-size: 1.5rem;
 		font-weight: 500;
 	}
-	&__list {
-		& li {
-			list-style: inside;
-			font-weight: 300;
-			margin-bottom: .5rem;
-			line-height: 1.2;
-		}
+	&__list li {
+		list-style: inside;
+		font-weight: 300;
+		margin-bottom: .5rem;
+		line-height: 1.2;
+		
 	}
 }
 
