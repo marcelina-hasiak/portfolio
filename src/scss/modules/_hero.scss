@@ -20,8 +20,6 @@
 	}
 	&__logo-link {
 		display: flex;
-		align-items: center;
-		justify-content: center;
 	}
 	&__logo-img {
 		width: 3.6rem;
@@ -72,12 +70,14 @@
 //component => social media list
 .social-media-list {
 	display: flex;
+	
 	&--hero {
 		flex-direction: column;
 		padding-left: 2rem;
 		margin-bottom: 1rem;
 		width: min-content;
 		z-index: 10;
+
 		@media (min-width: 1024px) {
 			margin: 6rem 0 0 0;
 		}
@@ -89,11 +89,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-
 		padding: .4rem;
 	}
 	&__icon {
 		width: 1.3rem;
+
 		@media (min-width: 1024px) {
 			width: 1.4rem;
 		}
@@ -119,6 +119,7 @@
 		letter-spacing: 0.2rem;
 		font-weight: 500;
 		width: min-content;
+
 		@media (min-width: 600px) {
 			padding: 0.1 2rem 0.2rem 2.5rem;
 			margin-left: 0;
@@ -136,10 +137,12 @@
 .email-wrapper {
 	text-decoration: none;
 	color: white;
+
 	@media (min-width: 600px) {
 		position: relative;
 		padding-left: 5.5rem;
 		height: 1.5rem;
+
 		@media (min-width: 1024px) {
 			padding-left: 1rem;
 			height: unset;
@@ -148,6 +151,7 @@
 			position: absolute;
 			font-size: .6rem;
 			max-height: 80%;
+
 			&:before {
 				content: '';
 				position: absolute;
@@ -195,6 +199,7 @@
 		margin: 0;
 		padding-bottom: .5rem;
 		position: relative;
+
 		@media (min-width: 450px) {
 			font-size: 2.7rem;
 		}
@@ -204,6 +209,7 @@
 		}
 		@media (min-width: 750px) {
 			font-size: 3.6rem;
+
 			&:before {
 				content: '';
 				position: absolute;
@@ -216,6 +222,7 @@
 		}
 		@media (min-width: 1024px) {
 			letter-spacing: .3rem;
+
 			&:before {
 				width: 22.5rem;
 				height: 7.5rem;
@@ -224,6 +231,7 @@
 		}
 		@media (min-width: 1360px) {
 			font-size: 4rem;
+
 			&:before {
 				width: 26rem;
 				height: 7.5rem;
@@ -232,6 +240,7 @@
 		}
 		@media (min-width: 1700px) {
 			font-size: 4.4rem;
+
 			&:before {
 				width: 28rem;
 				height: 8rem;
@@ -268,6 +277,7 @@
 	height: 600px;
 	display: grid;
 	grid-template-rows: min-content 1fr;
+
 	@media (min-width: 1024px) {
 		height: 750px;
 	}
