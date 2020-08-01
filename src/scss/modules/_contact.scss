@@ -1,0 +1,83 @@
+.contact {
+	padding: 10rem 3rem 3rem 3rem;
+	background: #140152;
+	z-index: 1;
+	position: relative;
+
+	@media (min-width: 600px) {
+		padding: 10rem 4rem 4rem 4rem;
+	}
+	@media (min-width: 1024px) {
+		padding: 10rem 6rem 3rem 6rem;
+	}
+	&__heading {
+		&:after {
+			width: 10.5rem;
+			left: -1rem;
+		}
+	}
+	&__form {
+		margin: 0 auto;
+		@media (min-width: 1200px) {
+			width: 80%;
+		}
+		@media (min-width: 1200px) {
+			width: 70%;
+		}
+	}
+
+	&__field {
+		padding-bottom: 2rem;
+	}
+	&__label {
+		padding-bottom: 1.5rem;
+
+		@media (min-width: 750px) {
+			margin-right: 1rem;
+			padding-bottom: 0;
+		}
+	}
+	&__input {
+		padding: .3rem;
+		border: none;
+		border-radius: 4px;
+		color: #140152;
+		height: 50px;
+		width: 100%;
+
+		@media (min-width: 720px) {
+			height: 60px;
+		}
+		&--textarea {
+			min-height: 150px;
+			resize: vertical;
+		}
+	}
+	&__submit {
+		margin: 2.5rem auto 0 auto;
+
+		@media (min-width: 750px) {
+			margin: 0;
+			margin-top: 2rem;
+		}
+	}
+}
+
+//LAYOUT
+.contact-layout {
+    display: grid;
+    align-items: center;
+    @media (min-width: 750px) {
+        grid-template-columns: 1fr minmax(60%, 3fr);
+    }
+    &:nth-child(3) {
+        align-items: start;
+    }
+
+    &__submit {
+        @media (min-width: 750px) {
+			grid-column: 2/3;
+			justify-self: center;
+		}
+    }
+}
