@@ -5,7 +5,13 @@
 	z-index: 1;
 
 	@media (min-width: 1024px) {
-		padding: 10rem 6rem 4rem 6rem;
+		padding: 10rem 5rem 3rem 5rem;
+	}
+	@media (min-width: 1460px) {
+		padding: 10rem 8rem 3rem 8rem;
+	}
+	@media (min-width: 1700px) {
+		padding: 10rem 10rem 3rem 10rem;
 	}
 	&__heading {
 		padding: 0 3rem;
@@ -26,9 +32,10 @@
 		}
 	}
 	&__paragraph {
+		font-size: .8rem;
 		font-weight: 300;
 		margin-bottom: 1.5rem;
-		line-height: 1.2;
+		line-height: 1.4;
 		padding: 0 3rem;
 		display: block;
 
@@ -46,7 +53,7 @@
 			}
 		}
 		&--strong {
-			font-size: 1.1rem;
+			font-size: .9rem;
 			font-weight: 500;
 		}
 		&--call-to-action {
@@ -58,7 +65,7 @@
 				content: "";
 				position: absolute;
 				width: 5rem;
-				height: 0.15rem;
+				height: 0.1rem;
 				top: 0.6rem;
 				right: -1.5rem;
 				background: #ffffff;
@@ -67,7 +74,7 @@
 				transform: rotate(-90deg);
 				width: max-content;
 				height: min-content;
-				top: 10rem;
+				top: 8.7rem;
 			}
 		}
 	}
@@ -128,7 +135,10 @@
 
 		@media (min-width: 1024px) {
 			top: 10rem;
-			left: -6rem;
+			left: -5rem;
+		}
+		@media (min-width: 1460px) {
+			left: -10rem;
 		}
 	}
 	&--projects-right {
@@ -136,8 +146,11 @@
 		top: 30rem;
 
 		@media (min-width: 1024px) {
-			right: -4.5rem;
+			right: -3.5rem;
 			top: 13rem;
+		}
+		@media (min-width: 1460px) {
+			right: -8.5rem;
 		}
 	}
 }
@@ -149,7 +162,6 @@
 		padding: 2.5rem 3.5rem;
 		background: #140152;
 		margin-bottom: 2rem;
-		grid-column: 1/2;
 		display: flex;
 		align-items: center;
 	}
@@ -233,19 +245,18 @@
 				justify-self: center;
 			}
 		}
+		&__carousel {
+			grid-column: 1/2;
+		}
 	}
 
 	&__buttons {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(3, 1fr);
 		align-content: center;
 		justify-content: center;
 		justify-items: center;
 		grid-gap: 1.5rem;
-
-		@media (min-width: 350px) {
-			grid-template-columns: repeat(3, 1fr);
-		}
 		@media (min-width: 550px) {
 			grid-template-columns: repeat(6, 1fr);
 			grid-row: 2/5;

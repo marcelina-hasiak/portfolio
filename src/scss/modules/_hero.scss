@@ -195,7 +195,7 @@
 		padding: 0 6rem 0 0;
 	}
 	&__title {
-		font-size: 1.9rem;
+		font-size: 1.8rem;
 		letter-spacing: 0.1rem;
 		font-family: Limelight;
 		text-transform: uppercase;
@@ -204,7 +204,7 @@
 		position: relative;
 
 		@media (min-width: 450px) {
-			font-size: 2.6rem;
+			font-size: 2.5rem;
 		}
 		@media (min-width: 600px) {
 			font-size: 3rem;
@@ -228,7 +228,7 @@
 
 			&:before {
 				width: 22.5rem;
-				height: 7.5rem;
+				height: 7rem;
 				left: -2rem;
 			}
 		}
