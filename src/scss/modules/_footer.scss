@@ -35,7 +35,7 @@
 			margin-left: 0;
 		}
 	}
-	&__logo-img {
+	&__logo-svg {
 		width: 3rem;
 
 		@media (min-width: 1024px) {
@@ -70,12 +70,11 @@
 	}
 }
 
-//components=> social media list
 .social-media-list--footer {
 	margin: 0;
 	padding: 0.5rem 0.8rem;
 }
-//LAYOUT
+
 .footer-layout {
 	display: flex;
 

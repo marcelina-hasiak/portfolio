@@ -1,50 +1,48 @@
 *,
 *::before,
 *::after {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
 
 html {
-	font-size: 12px;
-	box-sizing: border-box;
-	@media (min-width: 200px) and (max-width: 1023px) {
-		font-size: calc(12px + (23 - 12) * ( (100vw - 200px) / (1023 - 250)));
-	}
+  font-size: 12px;
+  box-sizing: border-box;
+  @media (min-width: 200px) and (max-width: 1023px) {
+    font-size: calc(12px + (23 - 12) * ((100vw - 200px) / (1023 - 250)));
+  }
 
-	@media (min-width: 1024px) and (max-width: 2000px) {
-		font-size: calc(23px + (28 - 23) * ( (100vw - 1024px) / (2000 - 1024)));
-	}
-	@media (min-width: 2000px) {
-		font-size: 30px;
-	}
+  @media (min-width: 1024px) and (max-width: 2000px) {
+    font-size: calc(23px + (28 - 23) * ((100vw - 1024px) / (2000 - 1024)));
+  }
+  @media (min-width: 2000px) {
+    font-size: 30px;
+  }
+  scroll-behavior: smooth;
 }
 
 body {
-	font-family: 'Montserrat Alternates', Arial, Helvetica, sans-serif;
-	background: #21007a;
-	color: #ffffff;
-	max-width: 2000px;
-	margin: 0 auto;
-	overflow-x: hidden;
+  font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
+  background: #21007a;
+  color: #ffffff;
+  max-width: 2000px;
+  margin: 0 auto;
+  overflow-x: hidden;
 }
 
-//custom scrollbar
 *::-webkit-scrollbar {
-	width: 18px;
+  width: 18px;
 }
 *::-webkit-scrollbar-track {
-	background: #1e016d;
+  background: #1e016d;
 }
 *::-webkit-scrollbar-thumb {
-	background-color: #695a92;
+  background-color: #695a92;
 }
 *:focus {
-    outline: 1px dotted white;
+  outline: 1px dotted white;
 }
 button:focus {
-    outline: 1px dotted white;
+  outline: 1px dotted white;
 }
-
-
