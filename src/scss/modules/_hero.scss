@@ -37,7 +37,7 @@
   &__logo-svg {
     width: 3.6rem;
     &:hover #logo-m-character {
-      fill:#f0271a;
+      fill: #f0271a;
     }
   }
   &__bar {
@@ -108,7 +108,6 @@
   cursor: pointer;
 }
 
-
 .social-media-list {
   display: flex;
 
@@ -125,17 +124,17 @@
   }
   &__item {
     list-style: none;
-    transition: transform .4s ease-in-out;
-    &--hero{
+    transition: transform 0.4s ease-in-out;
+    &--hero {
       &:hover {
-        transform: translateX(15px);
-      }
-      &--footer:hover {
-      
+        transform: translateX(30%);
       }
     }
-
-
+    &--footer {
+      &:hover {
+        transform: translateY(-30%);
+      }
+    }
   }
   &__link {
     display: flex;
@@ -173,7 +172,7 @@
     width: min-content;
     transform: scale(1);
     backface-visibility: hidden;
-    transition: background-color .6s ease-in-out, transform 0.4s ease-in-out;
+    transition: background-color 0.6s ease-in-out, transform 0.4s ease-in-out;
     &:hover {
       background-color: #f0271a;
       transform: scale(1.1);
@@ -225,7 +224,6 @@
       bottom: 3.5rem;
     }
   }
-  
 }
 
 .hero-heading {
@@ -321,7 +319,7 @@
   &__image {
     height: auto;
     max-height: 100%;
-    max-width: 95%;
+    max-width: 90%;
 
     @media (min-width: 1024px) {
       height: 100%;
@@ -430,10 +428,9 @@
     }
   }
   @media (min-width: 1024px) {
-    grid-template-columns: minmax(auto, 0.2fr) minmax(0, 0.8fr) repeat(
-        2,
-        minmax(0, 1fr)
-      ) minmax(0, 0.5fr);
+    grid-template-columns:
+      minmax(auto, 0.2fr) minmax(0, 0.8fr) repeat(2, minmax(0, 1fr))
+      minmax(0, 0.5fr);
     grid-template-rows: minmax(auto, 4fr) minmax(0, 1fr);
     row-gap: 1rem;
     overflow: hidden;
