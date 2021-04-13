@@ -37,7 +37,8 @@
   }
   &__logo-svg {
     width: 3.6rem;
-    &:hover #logo-m-character {
+    height: auto;
+    &:hover #logo-m-character, &:active #logo-m-character {
       fill: #f0271a;
     }
   }
@@ -123,16 +124,16 @@
       margin: 6rem 0 0 0;
     }
   }
-  &__item {
+  &__item{
     list-style: none;
     transition: transform 0.4s ease-in-out;
     &--hero {
-      &:hover {
+      &:hover, &:active {
         transform: translateX(30%);
       }
     }
     &--footer {
-      &:hover {
+      &:hover, &:active {
         transform: translateY(-30%);
       }
     }
@@ -174,7 +175,7 @@
     transform: scale(1);
     backface-visibility: hidden;
     transition: background-color 0.6s ease-in-out, transform 0.4s ease-in-out;
-    &:hover {
+    &:hover, &:active {
       background-color: #f0271a;
       transform: scale(1.1);
     }

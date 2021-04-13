@@ -37,7 +37,8 @@
 	}
 	&__logo-svg {
 		width: 3rem;
-    &:hover #logo-h-character {
+    height: auto;
+    &:hover #logo-h-character, &:active #logo-h-character {
       fill: #f0271a;
     }
 
@@ -93,6 +94,7 @@
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+    margin-bottom: .5rem;
 
 		@media (min-width: 1024px) {
 			flex-direction: column;
