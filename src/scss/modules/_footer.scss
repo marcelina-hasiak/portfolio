@@ -37,6 +37,9 @@
 	}
 	&__logo-svg {
 		width: 3rem;
+    &:hover #logo-h-character {
+      fill: #f0271a;
+    }
 
 		@media (min-width: 1024px) {
 			width: 4rem;
