@@ -9,20 +9,17 @@ new Glide('.glide', {
     gap: 20,
     animationDuration: 700,
     breakpoints: {
-        1450: {
-            perView: 2
-          },
-          1300: {
+        // 1450: {
+        //     perView: 2
+        //   },
+          1160: {
             perView: 1
           },
-        1024: {
+        1023: {
             perView: 2
           },
         700: {
           perView: 1
-        },
-        450: {
-            perView: 1
         },
     },
 }).mount({ Controls, Breakpoints })
