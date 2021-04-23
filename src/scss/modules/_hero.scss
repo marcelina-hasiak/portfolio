@@ -1,6 +1,34 @@
 #logo-m-character,
 #logo-h-character {
-  transition: fill 1s;
+  transition: fill .5s;
+}
+
+#menu-m-character {
+  transition: color .5s;
+}
+
+.active-anchor {
+  border-bottom: solid 0.2rem #ff7900;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
 }
 
 .navigation {
@@ -12,15 +40,28 @@
   font-weight: 400;
   letter-spacing: 0.3rem;
   z-index: 100;
+  &--fixed {
+    position: fixed;
+    background:#140152;
+    width: 100%;
+    border-bottom: 1px solid #ffffff;
+    animation: fade-in .4s forwards;
+    @supports(backdrop-filter: blur(10px)) {
+      backdrop-filter: blur(10px);
+      background: rgba(20, 1, 82, 0.1);
+      box-shadow: 0px 1px 10px 5px #140152;
+      border-bottom: none;
+    }
+  }
 
   @media (min-width: 1024px) {
-    padding: 1.5rem 2rem 0 2rem;
+    padding: 1.5rem 2rem 1rem 2rem;
   }
   @media (min-width: 1200px) {
-    padding: 1.5rem 4rem 0 2rem;
+    padding: 1.5rem 4rem 1rem 2rem;
   }
   @media (min-width: 1460px) {
-    padding: 1.5rem 6rem 0 2rem;
+    padding: 1.5rem 6rem 1rem 2rem;
   }
   &--open {
     position: fixed;
@@ -63,10 +104,17 @@
     color: #ffffff;
     text-decoration: none;
     text-align: center;
+    transition: transform 0.4s ease-in-out;
+    &:hover, &:active {
+      transform: translateX(30%);
+    }
 
     @media (min-width: 1024px) {
       padding-left: 0.3rem;
       margin-left: 1.8rem;
+      &:hover, &:active {
+        transform: none;
+      }
       &--important {
         border-bottom: solid 0.2rem #ff7900;
       }
@@ -86,6 +134,10 @@
   text-transform: uppercase;
   font-size: 1.4rem;
   cursor: pointer;
+
+  &:hover #menu-m-character, &:active #menu-m-character {
+    color: #f0271a;
+  }
 
   @media (min-width: 1024px) {
     display: none;
@@ -124,7 +176,7 @@
       margin: 6rem 0 0 0;
     }
   }
-  &__item{
+  &__item {
     list-style: none;
     transition: transform 0.4s ease-in-out;
     &--hero {
@@ -195,6 +247,7 @@
 .email-wrapper {
   text-decoration: none;
   color: white;
+  width: min-content;
 
   @media (min-width: 600px) {
     position: relative;

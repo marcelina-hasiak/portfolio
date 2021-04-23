@@ -189,10 +189,12 @@
 		position: absolute;
 		top: 38%;
 		z-index: 100;
-
-		& img {
-			height: 2.5rem;
-		}
+    & svg {
+      transition: fill .8s;
+      &:hover, &:active {
+        fill:  #fb5607;
+      }
+    }
 		&--left {
 			left: -2rem;
 		}

@@ -55,11 +55,54 @@ function hamburgerMenuHandler() {
   body.classList.toggle('prevent-scrolling')
 }
 
+/* FIXED MENU */
+
+const heroSection = document.querySelector('.hero-layout--js')
+const projectAnchor = document.querySelector('[data-anchor=projects]')
+
+const menuOptions = {
+  threshold: 0.01,
+}
+
+const heroSectionObserver = new IntersectionObserver(setMenuPosition, menuOptions)
+
+function setMenuPosition(entry) {
+  if (!entry[0].isIntersecting) {
+    navigation.classList.add('navigation--fixed')
+    projectAnchor.classList.remove('navigation__link--important')
+  } else {
+    navigation.classList.remove('navigation--fixed')
+    projectAnchor.classList.add('navigation__link--important')
+  }
+}
+
+heroSectionObserver.observe(heroSection)
 
 
+/* ANCHOR SECTION */
 
+const anchorSections = document.querySelectorAll('[data-anchor-section]')
 
+const anchorSectionsOptions = {
+  //threshold: 0.2,
+  rootMargin: '-30% 0% -70% 0%',
+}
 
+const anchorSectionsObserver = new IntersectionObserver(setAnchorSection, anchorSectionsOptions)
 
-  
+function setAnchorSection(entries) {
+  entries.forEach(entry => {
+    const activeAnchor = document.querySelector(`[data-anchor=${entry.target.id}]`)
+    if (!entry.isIntersecting) {
+      activeAnchor.classList.remove('active-anchor')
+    }
+    if (entry.isIntersecting) {
+    
+    activeAnchor.classList.add('active-anchor')
+    } 
+  })
+}
+
+anchorSections.forEach(section => {anchorSectionsObserver.observe(section)})
+
   
