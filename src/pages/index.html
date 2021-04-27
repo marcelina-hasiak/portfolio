@@ -14,7 +14,7 @@
   <main>
     <div class="hero-layout hero-layout--js">
       <header class="hero-layout__header navigation navigation--js">
-        <a class="navigation__logo-link navigation__logo-link--js" href="#hero">
+        <a class="navigation__logo-link navigation__logo-link--js animation animation__logo" href="#hero">
           <svg class="navigation__logo-svg" width="101" height="74" viewBox="0 0 101 74" fill="none"
             xmlns="http://www.w3.org/2000/svg">
             <path id="logo-m-character"
@@ -25,17 +25,17 @@
               fill="white" />
           </svg>
         </a>
-        <button class="hamburger-menu hamburger-menu--js"><span id="menu-m-character">M</span>enu</button>
-        <nav class="navigation__bar navigation__bar--js">
+        <button class="hamburger-menu hamburger-menu--js animation animation__navigation"><span id="menu-m-character">M</span>enu</button>
+        <nav class="navigation__bar navigation__bar--js animation animation__navigation">
           <a class="navigation__link navigation__link--js" href="#about" data-anchor="about">About</a>
-          <a class="navigation__link navigation__link--important navigation__link--js" href="#projects" data-anchor="projects">Projects</a>
+          <a class="navigation__link navigation__link--js" href="#projects" data-anchor="projects">Projects</a>
           <a class="navigation__link navigation__link--js" href="#contact" data-anchor="contact">Contact</a>
         </nav>
       </header>
       <div class="hamburger-menu-bg--js"></div>
       <section class="hero-layout__section hero-section-layout" id="hero">
         <div class="hero-section-layout__background-left"></div>
-        <ul class="hero-section-layout__list social-media-list social-media-list--hero">
+        <ul class="hero-section-layout__list social-media-list social-media-list--hero animation animation__social-media-list">
           <li class="social-media-list__item social-media-list__item--hero">
             <a class="social-media-list__link" target="_blank" rel="noopener noreferrer"
               href="https://github.com/marcelina-hasiak">
@@ -67,19 +67,19 @@
             </a>
           </li>
         </ul>
-        <div class="hero-section-layout__image image-wrapper">
+        <div class="hero-section-layout__image image-wrapper animation animation__hero-image">
           <img class="image-wrapper__image" src="../assets/img/hero.svg"
             alt="Smilling Marcelina, self-drawing vector graphic">
         </div>
         <div class="hero-section-layout__background-right"></div>
-        <a href="mailto:marcelina.hasiak@gmail.com" class="hero-section-layout__email email-wrapper">
+        <a href="mailto:marcelina.hasiak@gmail.com" class="hero-section-layout__email email-wrapper animation animation__email">
           <address class="email-wrapper__email">marcelina.hasiak@gmail.com</address>
         </a>
         <div class="hero-section-layout__title hero-heading">
-          <h1 class="hero-heading__title">Marcelina</br>Hasiak</h1>
-          <p class="hero-heading__subtitle">frontend developer</br>-wannabe</p>
+          <h1 class="hero-heading__title animation animation__hero-heading">Marcelina</br>Hasiak</h1>
+          <p class="hero-heading__subtitle animation animation__hero-subtitle">frontend developer</br>-wannabe</p>
         </div>
-        <a href="#projects" class="hero-section-layout__btn btn btn--orange">Projects</a>
+        <a href="#projects" class="hero-section-layout__btn btn btn--orange animation animation__project-button">Projects</a>
         <div class="hero-section-layout__decoration image-wrapper">
           <img class="image-wrapper__image" src="../assets/img/leafs-bg-hero.svg" alt="">
         </div>
@@ -148,33 +148,32 @@
       </div>
       <img class="main-decorative-pattern main-decorative-pattern--right main-decorative-pattern--about-right"
         src="../assets/img/leafs-bg-about.svg" alt="">
-      <p class="about__paragraph about__paragraph--call-to-action about-layout__paragraph--call-to-action">my interests,
-        CLICK for more</p>
-      <div class="about__buttons-wrapper about-layout__buttons">
-        <button class="btn btn-hobby btn-hobby--js">
-          <img class="btn-hobby__image" src="../assets/img/icon-painting.svg" alt="Icon, tool paintings">
-          <span class="btn-hobby__title">paintings</span>
-        </button>
-        <button class="btn btn-hobby btn-hobby--js">
-          <img class="btn-hobby__image" src="../assets/img/icon-camera.svg" alt="Icon, photocamera">
-          <span class="btn-hobby__title">photography</span>
-        </button>
-        <button class="btn btn-hobby btn-hobby--js">
-          <img class="btn-hobby__image" src="../assets/img/icon-mountains.svg" alt="Icon, mountains">
-          <span class="btn-hobby__title">mountains</span>
-        </button>
-        <button class="btn btn-hobby btn-hobby--js">
-          <img class="btn-hobby__image" src="../assets/img/icon-pottery.svg" alt="Icon, pottery">
-          <span class="btn-hobby__title">pottery</span>
-        </button>
-        <button class="btn btn-hobby btn-hobby--js">
-          <img class="btn-hobby__image" src="../assets/img/icon-games.svg" alt="Icon, game controler">
-          <span class="btn-hobby__title">videogames</span>
-        </button>
-        <button class="btn btn-hobby btn-hobby--js">
-          <img class="btn-hobby__image" src="../assets/img/icon-dice.svg" alt="Icon, dice">
-          <span class="btn-hobby__title">boardgames</span>
-        </button>
+      <h3 class="about__paragraph about__paragraph--call-to-action about-layout__paragraph--call-to-action">here' re my interests</h3>
+      <div class="about__cards-wrapper about-layout__cards">
+        <div class="card-hobby">
+          <img class="card-hobby__image" src="../assets/img/icon-painting.svg" alt="Icon, tool paintings">
+          <p class="card-hobby__title">paintings</p>
+        </div>
+        <div class="card-hobby">
+          <img class="card-hobby__image" src="../assets/img/icon-camera.svg" alt="Icon, photocamera">
+          <p class="card-hobby__title">photography</p>
+        </div>
+        <div class="card-hobby">
+          <img class="card-hobby__image" src="../assets/img/icon-mountains.svg" alt="Icon, mountains">
+          <p class="card-hobby__title">mountains</p>
+        </div>
+        <div class="card-hobby">
+          <img class="card-hobby__image" src="../assets/img/icon-pottery.svg" alt="Icon, pottery">
+          <p class="card-hobby__title">pottery</p>
+        </div>
+        <div class="card-hobby">
+          <img class="card-hobby__image" src="../assets/img/icon-games.svg" alt="Icon, game controler">
+          <p class="card-hobby__title">videogames</p>
+        </div>
+        <div class="card-hobby">
+          <img class="card-hobby__image" src="../assets/img/icon-dice.svg" alt="Icon, dice">
+          <p class="card-hobby__title">boardgames</p>
+        </div>
       </div>
     </section>
 
@@ -208,22 +207,26 @@
       <article class="projects__wrapper projects-layout">
         <img class="main-decorative-pattern main-decorative-pattern--right main-decorative-pattern--projects-right"
           src="../assets/img/leafs-bg-about.svg" alt="Decorative leafs as a background">
-        <img class="projects__image" src="../assets/img/portfolio.jpg" alt="Portfolio project.">
+        <img class="projects__image" src="../assets/img/memo-bananya.jpg" alt="Memo Bananya project.">
 
         <div class="projects__link-wrapper projects-layout__links">
-          <a href="https://github.com/marcelina-hasiak/portfolio" target="_blank" rel="noopener noreferrer" class="projects__link projects__link--github">
+          <a href="https://github.com/marcelina-hasiak/memo-bananya" target="_blank" rel="noopener noreferrer" class="projects__link projects__link--github">
             <img class="projects__icon" src="../assets/img/icon-github.svg" alt="Icon, github">
           </a>
-          <p class="projects__hashtags"> #vanillaJS #cssGrid #cssFlexbox #cssAnimations #sass #sassModules #BEM #RWD #svgIllustrations #hamburgerMenu #es6 #semanticHTML5 #glide.js #forms #figmaProject </p>
+          <a href="https://marcelina-hasiak.github.io/memo-bananya/" target="_blank" rel="noopener noreferrer" class="projects__link projects__link--website">
+            <img class="projects__icon" src="../assets/img/icon-website.svg" alt="Icon, website">
+          </a>
+          <p class="projects__hashtags"> #vanillaJS #factoryPattern #observerPattern #separationOfConcerns #cssGrid #cssFlexbox #cssAnimations #keyframes #sass #BEM #svgIllustrations #PWA #es6 #semanticHTML5 #es6modules #es6classes #privateProperties #sassModules #RWD #webpack #npm #uuid #game #figmaProject</p>
         </div>
 
         <div class="project-description projects-layout__description">
-          <h3 class="project-description__heading">Portfolio</h3>
+          <h3 class="project-description__heading">Memo Bananya</h3>
           <ul class="project-description__list">
-            <li>Selfmade svg graphic and design made in figma</li>
+            <li>This is the biggest project I have ever done so far. I tried my best to separate the buisness logic from the view and used all my javascript powers to write the best, reusable code I can before I make my first React app.</li>
+            <li>3 levels available, single and multiplayer</li>
+            <li>Memo Bananya exists as PWA</li>
             <li>Fully responsive web design</li>
-            <li>Contact form supported with netlify</li>
-            <li>Observer</li>
+            <li>Selfmade svg illustrations based on original png pictures</li>
           </ul>
         </div>
       </article>
@@ -255,32 +258,30 @@
         </div>
       </article>
 
-      <article class="projects__wrapper projects-layout">
+      <article class="projects__wrapper projects__wrapper--last-child projects-layout">
         <img class="main-decorative-pattern main-decorative-pattern--right main-decorative-pattern--projects-right"
           src="../assets/img/leafs-bg-about.svg" alt="Decorative leafs as a background">
-        <img class="projects__image" src="../assets/img/memo-bananya.jpg" alt="Memo Bananya project.">
+        <img class="projects__image" src="../assets/img/portfolio.jpg" alt="Portfolio project.">
 
         <div class="projects__link-wrapper projects-layout__links">
-          <a href="https://github.com/marcelina-hasiak/memo-bananya" target="_blank" rel="noopener noreferrer" class="projects__link projects__link--github">
+          <a href="https://github.com/marcelina-hasiak/portfolio" target="_blank" rel="noopener noreferrer" class="projects__link projects__link--github">
             <img class="projects__icon" src="../assets/img/icon-github.svg" alt="Icon, github">
           </a>
-          <a href="https://marcelina-hasiak.github.io/memo-bananya/" target="_blank" rel="noopener noreferrer" class="projects__link projects__link--website">
-            <img class="projects__icon" src="../assets/img/icon-website.svg" alt="Icon, website">
-          </a>
-          <p class="projects__hashtags"> #vanillaJS #factoryPattern #observerPattern #separationOfConcerns #cssGrid #cssFlexbox #cssAnimations #keyframes #sass #BEM #svgIllustrations #PWA #es6 #semanticHTML5 #es6modules #es6classes #privateProperties #sassModules #RWD #webpack #npm #uuid #game #figmaProject</p>
+          <p class="projects__hashtags"> #vanillaJS #cssGrid #cssFlexbox #cssAnimations #sass #sassModules #BEM #RWD #svgIllustrations #hamburgerMenu #es6 #semanticHTML5 #glide.js #forms #figmaProject </p>
         </div>
 
         <div class="project-description projects-layout__description">
-          <h3 class="project-description__heading">Memo Bananya</h3>
+          <h3 class="project-description__heading">Portfolio</h3>
           <ul class="project-description__list">
-            <li>This is the biggest project I have ever done so far. I tried my best to separate the buisness logic from the view and used all my javascript powers to write the best, reusable code I can before I make my first React app.</li>
-            <li>3 levels available, single and multiplayer</li>
-            <li>Memo Bananya exists as PWA</li>
+            <li>Selfmade svg graphic and design made in figma</li>
             <li>Fully responsive web design</li>
-            <li>Selfmade svg illustrations based on original png pictures</li>
+            <li>Contact form supported with netlify</li>
+            <li>Intersection Observer used for navigation and projects animation</li>
           </ul>
         </div>
       </article>
+
+
 
     </section>
 

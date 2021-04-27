@@ -7,13 +7,11 @@
   transition: color .5s;
 }
 
-.active-anchor {
-  border-bottom: solid 0.2rem #ff7900;
-}
+
 
 @keyframes fade-in {
   from {
-    opacity: 0;
+    opacity: 0.2;
   }
 
   to {
@@ -21,13 +19,102 @@
   }
 }
 
-@keyframes fade-out {
+@keyframes slideInRight {
   from {
-    opacity: 1;
+    transform: translateX(50px);
   }
 
   to {
-    opacity: 0;
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(-20px);
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(50px);
+  }
+
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes button {
+  0% {
+    transform: scale(1);
+  }
+
+  50%, 60% {
+    background-color: #f0271a;
+    transform: scale(1.1);
+  }
+  
+  100% {
+    background-color: #fb5607;
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animation {
+  opacity: 0;
+  &__hero-heading {
+    animation: slideInLeft 1.6s forwards .6s;
+    @media (min-width: 1024px) {
+      animation: slideInRight 1.6s forwards .6s;
+    }
+
+  }
+  &__hero-subtitle {
+    animation: slideInLeft 1.1s forwards 1.2s;
+    @media (min-width: 1024px) {
+      animation: slideInRight 1.1s forwards 1.2s;
+    }
+  }
+  &__navigation {
+    animation: slideInUp 1s forwards;
+  }
+  &__project-button {
+    animation: button  .9s forwards 1.8s ease-in-out;
+  }
+  &__hero-image {
+    animation: slideInDown  1.5s forwards ease-out;
+  }
+  &__social-media-list {
+    animation: fade-in  2s forwards ease-out;
+  }
+  &__logo {
+    animation: fade-in 2s forwards ease-out;
+  }
+  &__email {
+    animation: slideInLeft 1.2s forwards 1.5s;
+    @media (min-width: 1024px) {
+      //animation: slideInRight 1.2s forwards 1s;
+    }
   }
 }
 
@@ -40,6 +127,17 @@
   font-weight: 400;
   letter-spacing: 0.3rem;
   z-index: 100;
+
+  @media (min-width: 1024px) {
+    padding: 1.5rem 2rem 1rem 2rem;
+  }
+  @media (min-width: 1200px) {
+    padding: 1.5rem 4rem 1rem 2rem;
+  }
+  @media (min-width: 1460px) {
+    padding: 1.5rem 6rem 1rem 2rem;
+  }
+
   &--fixed {
     position: fixed;
     background:#140152;
@@ -51,17 +149,14 @@
       background: rgba(20, 1, 82, 0.1);
       box-shadow: 0px 1px 10px 5px #140152;
       border-bottom: none;
+      padding: .5rem 2rem;
+      @media (min-width: 550px) {
+        padding: .8rem 2rem;
+      }
+      @media (min-width: 1024px) {
+        padding: 1.5rem 2rem;
+      }
     }
-  }
-
-  @media (min-width: 1024px) {
-    padding: 1.5rem 2rem 1rem 2rem;
-  }
-  @media (min-width: 1200px) {
-    padding: 1.5rem 4rem 1rem 2rem;
-  }
-  @media (min-width: 1460px) {
-    padding: 1.5rem 6rem 1rem 2rem;
   }
   &--open {
     position: fixed;
@@ -110,12 +205,13 @@
     }
 
     @media (min-width: 1024px) {
-      padding-left: 0.3rem;
+      //padding-left: 0.3rem;
       margin-left: 1.8rem;
+      border-bottom: solid 0.2rem transparent;
       &:hover, &:active {
         transform: none;
       }
-      &--important {
+      &--active {
         border-bottom: solid 0.2rem #ff7900;
       }
     }
@@ -535,5 +631,12 @@
       border-left: solid 0.3rem #ffffff;
       background: linear-gradient(180deg, #140152 30%, #3b1fc9 100%);
     }
+  }
+}
+
+.active-anchor {
+  @media (min-width: 1024px) {
+    transition: border-bottom 0.2s ease-in-out; 
+    border-bottom: solid 0.2rem #ff7900;
   }
 }
