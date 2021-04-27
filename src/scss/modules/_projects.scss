@@ -1,19 +1,19 @@
 .projects {
-  padding: 10rem 3rem 3rem 3rem;
+  padding: 8rem 3rem 3rem 3rem;
   background: #21007a;
   z-index: 1;
   position: relative;
   @media (min-width: 600px) {
-    padding: 10rem 4rem 4rem 4rem;
+    padding: 8rem 4rem 4rem 4rem;
   }
   @media (min-width: 1024px) {
-    padding: 10rem 5rem 3rem 5rem;
+    padding: 8rem 5rem 3rem 5rem;
   }
   @media (min-width: 1460px) {
-    padding: 10rem 8rem 3rem 8rem;
+    padding: 8rem 8rem 3rem 8rem;
   }
   @media (min-width: 1700px) {
-    padding: 10rem 10rem 3rem 10rem;
+    padding: 8rem 10rem 3rem 10rem;
   }
   &__heading {
     &:after {
@@ -24,6 +24,9 @@
   &__wrapper {
     margin-bottom: 6rem;
     position: relative;
+    &--last-child {
+      margin-bottom: 2rem;
+    }
   }
   &__image {
     margin-bottom: 1.5rem;
