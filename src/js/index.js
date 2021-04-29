@@ -119,4 +119,64 @@ anchorSections.forEach((section) => {
   anchorSectionsObserver.observe(section);
 });
 
+/* ANIMATIONS */
 
+
+const carousel = document.querySelector('.glide__wrapper--js')
+const carouselOptions = {
+  threshold: 0.5
+}
+const carouselObserver = new IntersectionObserver(animateCarousel, carouselOptions)
+function animateCarousel(entry, observer) {
+  if (!entry[0].isIntersecting) {
+    return
+  }
+  carousel.classList.toggle('animation__carousel')
+  observer.unobserve(carousel)
+}
+carouselObserver.observe(carousel)
+
+
+const cardHobbySection = document.querySelector('.about__cards-wrapper--js')
+const cardHobbySectionOptions = {
+  threshold: 0.4,
+}
+const cardHobbySectionObserver = new IntersectionObserver(animateCardsHobby, cardHobbySectionOptions)
+
+function animateCardsHobby(entry, observer) {
+  const deviceWidth = ((window.innerWidth > 0) ? window.innerWidth : screen.width)
+  if (!entry[0].isIntersecting) {
+    return
+  } 
+  if ( deviceWidth > 1023 ) {
+    const cardsHobby = entry[0].target.children
+    for (let i = 0; i < cardsHobby.length; i++) {
+      cardsHobby[i].classList.add('animation__card-hobby')
+      cardsHobby[i].style.animationDelay = `${i/5}s`
+    }
+  } else {
+    cardHobbySection.classList.add('animation__card-hobby')
+  }
+  observer.unobserve(cardHobbySection)
+}
+cardHobbySectionObserver.observe(cardHobbySection)
+
+const projectsImages = document.querySelectorAll('.projects__image--js')
+const projectsImagesOptions = {
+  threshold: 0.6,
+}
+const projectsImagesObserver = new IntersectionObserver(animateprojectsImages, projectsImagesOptions)
+
+function animateprojectsImages(entries, observer) {
+  entries.forEach(entry => {
+    if (!entry.isIntersecting) {
+      return
+    } 
+    entry.target.dataset.position === 'left' 
+      ? entry.target.classList.add('animation__projectImageRight') 
+      : entry.target.classList.add('animation__projectImageLeft')
+
+    observer.unobserve(entry.target)
+  })
+}
+projectsImages.forEach(projectImage => projectsImagesObserver.observe(projectImage))
