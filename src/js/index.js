@@ -56,6 +56,10 @@ function hamburgerMenuHandler() {
   hamburgerBackground.classList.toggle('hamburger-menu-bg--open')
   hamburgerButton.classList.toggle('closed')
   body.classList.toggle('prevent-scrolling')
+  if (hamburgerButton.classList.contains('animation__navigation')) {
+    hamburgerButton.classList.remove('animation__navigation')
+    hamburgerButton.classList.add('visible')
+  }
 }
 
 /* FIXED MENU */
@@ -75,7 +79,6 @@ function setMenuPosition(entry) {
 }
 
 /* ANCHOR SECTION */
-
 const anchorSections = document.querySelectorAll('[data-anchor-section]')
 
 setIntersectionObserver(
@@ -94,15 +97,8 @@ function setAnchorSection(entries) {
       : activeAnchor.classList.add('active-anchor')
   })
 }
-function setIntersectionObserver(callback, options, target) {
-  const observer = new IntersectionObserver(callback, options)
-  target.length
-    ? target.forEach((element) => observer.observe(element))
-    : observer.observe(target)
-}
 
 /* ANIMATIONS */
-
 //carousel
 const carousel = document.querySelector('.glide__wrapper--js')
 
@@ -158,4 +154,12 @@ function animateProjectsImages(entries, observer) {
 
     observer.unobserve(entry.target)
   })
+}
+
+
+function setIntersectionObserver(callback, options, target) {
+  const observer = new IntersectionObserver(callback, options)
+  target.length
+    ? target.forEach((element) => observer.observe(element))
+    : observer.observe(target)
 }
