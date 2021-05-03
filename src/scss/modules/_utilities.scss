@@ -2,6 +2,10 @@
   display: none;
 }
 
+.visible {
+  opacity: 1;
+}
+
 .prevent-scrolling {
   overflow: hidden;
   height: 100vh;
