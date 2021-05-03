@@ -21,7 +21,7 @@
     background:#140152;
     width: 100%;
     border-bottom: 1px solid #ffffff;
-    animation: fade-in .4s forwards;
+    animation: fadeIn .4s forwards;
     @supports(backdrop-filter: blur(10px)) {
       backdrop-filter: blur(10px);
       background: rgba(20, 1, 82, 0.1);
