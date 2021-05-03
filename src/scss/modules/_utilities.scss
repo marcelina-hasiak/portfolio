@@ -1,7 +1,24 @@
 .closed {
   display: none;
 }
+
 .prevent-scrolling {
   overflow: hidden;
   height: 100vh;
+}
+
+.active-anchor {
+  @media (min-width: 1024px) {
+    transition: border-bottom 0.2s ease-in-out; 
+    border-bottom: solid 0.2rem #ff7900;
+  }
+}
+
+#logo-m-character,
+#logo-h-character {
+  transition: fill .5s;
+}
+
+#menu-m-character {
+  transition: color .5s;
 }

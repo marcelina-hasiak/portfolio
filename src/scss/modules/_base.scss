@@ -12,7 +12,6 @@ html {
   @media (min-width: 200px) and (max-width: 1023px) {
     font-size: calc(12px + (23 - 12) * ((100vw - 200px) / (1023 - 250)));
   }
-
   @media (min-width: 1024px) and (max-width: 2000px) {
     font-size: calc(23px + (28 - 23) * ((100vw - 1024px) / (2000 - 1024)));
   }
@@ -23,7 +22,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat Alternates", Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat Alternates', Arial, Helvetica, sans-serif;
   background: #21007a;
   color: #ffffff;
   max-width: 2000px;
